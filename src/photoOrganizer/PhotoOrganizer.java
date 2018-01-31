@@ -363,8 +363,14 @@ public class PhotoOrganizer extends JFrame  {
 				
 				System.out.println("add " + previewPane.getSelectedPhotos().size() 
 						+ " photos to album " + getSelectedTreeNode());
-				previewPane.setPhotos(rootAlbum.getSubAlbum(getSelectedTreeNode().getUserObject().toString()).getPhotos());
-				previewPane.display();//update the view
+				try{
+					previewPane.setPhotos(rootAlbum.getSubAlbum(getSelectedTreeNode().getUserObject().toString()).getPhotos());
+					previewPane.display();//update the view
+				}
+				catch(NullPointerException ex){
+					JOptionPane.showMessageDialog(null,"Can't add photos to root album.");
+					return;
+				}
 			}}
 				);
 		panel.add(addPhotosButton);
