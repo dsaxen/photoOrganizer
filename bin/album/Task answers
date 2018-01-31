@@ -1,0 +1,12 @@
+Java SDGK Task 1. Daniel Saxén
+
+Answer 4.
+a) Först hade jag ungefär 3% coverage före jag började med testklassen. Länge höll jag på med närmare 80 procent.
+   Till slut hade jag coverage på 99 % i en timme, tills jag fick det till 100. 
+b) Nej
+
+Answer 5.
+a) Screenshot bifogad i zip-filen.
+b) Fast jag fick 100 % coverage, missade jag antagligen vissa specialfall. 100% är dock ett bra resultat med tanke på att JUnit 
+   teorin var helt ny för mig.
+   Hoppas jag kan förbättra ännu på resultatet senare.

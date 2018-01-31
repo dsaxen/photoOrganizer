@@ -1,0 +1,7 @@
+README:
+
+Check the Photo class. it has extended observable. The FlaggedAlbum and GreatAlbum classes are subclasses of the abstract class
+SearchAlbum, which implements observer. SearchAlbum and Album both implement the AlbumInterface.
+
+When a changed in a photo has occured, the setters in the photo class notify the observers for the photos. Then the notify method is ran 
+in search Album from either the flagged Album or great Album's update method, updating the photo's state. 
